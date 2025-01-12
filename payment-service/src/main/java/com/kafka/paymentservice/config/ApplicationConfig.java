@@ -1,4 +1,4 @@
-package com.appsdeveloperblog.payments.config;
+package com.kafka.paymentservice.config;
 
 import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.context.annotation.Bean;

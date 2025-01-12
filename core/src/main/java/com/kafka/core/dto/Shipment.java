@@ -1,47 +1,17 @@
-package com.appsdeveloperblog.core.dto;
+package com.kafka.core.dto;
 
 import java.util.UUID;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
 public class Shipment {
     private UUID id;
     private UUID orderId;
     private UUID paymentId;
-
-    public Shipment() {
-    }
-
-    public Shipment(UUID id, UUID orderId, UUID paymentId) {
-        this.id = id;
-        this.orderId = orderId;
-        this.paymentId = paymentId;
-    }
-
-    public Shipment(UUID orderId, UUID paymentId) {
-        this.orderId = orderId;
-        this.paymentId = paymentId;
-    }
-
-    public UUID getOrderId() {
-        return orderId;
-    }
-
-    public void setOrderId(UUID orderId) {
-        this.orderId = orderId;
-    }
-
-    public UUID getId() {
-        return id;
-    }
-
-    public void setId(UUID id) {
-        this.id = id;
-    }
-
-    public UUID getPaymentId() {
-        return paymentId;
-    }
-
-    public void setPaymentId(UUID paymentId) {
-        this.paymentId = paymentId;
-    }
 }

@@ -1,9 +1,9 @@
-package com.appsdeveloperblog.products.service;
+package com.kafka.productservice.service;
 
-import com.appsdeveloperblog.core.dto.Product;
-import com.appsdeveloperblog.core.exceptions.ProductInsufficientQuantityException;
-import com.appsdeveloperblog.products.dao.jpa.entity.ProductEntity;
-import com.appsdeveloperblog.products.dao.jpa.repository.ProductRepository;
+import com.kafka.core.dto.Product;
+import com.kafka.core.exceptions.ProductInsufficientQuantityException;
+import com.kafka.productservice.jpa.entity.ProductEntity;
+import com.kafka.productservice.jpa.repository.ProductRepository;
 import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;
 

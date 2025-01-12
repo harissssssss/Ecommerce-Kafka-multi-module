@@ -1,11 +1,19 @@
-package com.appsdeveloperblog.orders.dao.jpa.entity;
+package com.kafka.orderservice.jpa.entity;
 
-import com.appsdeveloperblog.core.types.OrderStatus;
+import com.kafka.core.types.OrderStatus;
 import jakarta.persistence.*;
 
 import java.sql.Timestamp;
 import java.util.UUID;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
 @Table(name = "orders_history")
 @Entity
 public class OrderHistoryEntity {
@@ -18,36 +26,4 @@ public class OrderHistoryEntity {
     private OrderStatus status;
     @Column(name = "created_at")
     private Timestamp createdAt;
-
-    public UUID getId() {
-        return id;
-    }
-
-    public void setId(UUID id) {
-        this.id = id;
-    }
-
-    public UUID getOrderId() {
-        return orderId;
-    }
-
-    public void setOrderId(UUID orderId) {
-        this.orderId = orderId;
-    }
-
-    public OrderStatus getStatus() {
-        return status;
-    }
-
-    public void setStatus(OrderStatus status) {
-        this.status = status;
-    }
-
-    public Timestamp getCreatedAt() {
-        return createdAt;
-    }
-
-    public void setCreatedAt(Timestamp createdAt) {
-        this.createdAt = createdAt;
-    }
 }

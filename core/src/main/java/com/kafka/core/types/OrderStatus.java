@@ -1,4 +1,4 @@
-package com.appsdeveloperblog.core.types;
+package com.kafka.core.types;
 
 public enum OrderStatus {
     CREATED,

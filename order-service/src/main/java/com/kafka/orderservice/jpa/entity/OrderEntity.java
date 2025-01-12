@@ -1,10 +1,19 @@
-package com.appsdeveloperblog.orders.dao.jpa.entity;
+package com.kafka.orderservice.jpa.entity;
 
-import com.appsdeveloperblog.core.types.OrderStatus;
+import com.kafka.core.types.OrderStatus;
 import jakarta.persistence.*;
 
 import java.util.UUID;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
 @Table(name = "orders")
 @Entity
 public class OrderEntity {
@@ -19,44 +28,4 @@ public class OrderEntity {
     private UUID productId;
     @Column(name = "product_quantity")
     private Integer productQuantity;
-
-    public UUID getCustomerId() {
-        return customerId;
-    }
-
-    public void setCustomerId(UUID customerId) {
-        this.customerId = customerId;
-    }
-
-    public OrderStatus getStatus() {
-        return status;
-    }
-
-    public void setStatus(OrderStatus status) {
-        this.status = status;
-    }
-
-    public UUID getId() {
-        return id;
-    }
-
-    public void setId(UUID id) {
-        this.id = id;
-    }
-
-    public UUID getProductId() {
-        return productId;
-    }
-
-    public void setProductId(UUID productId) {
-        this.productId = productId;
-    }
-
-    public Integer getProductQuantity() {
-        return productQuantity;
-    }
-
-    public void setProductQuantity(Integer productQuantity) {
-        this.productQuantity = productQuantity;
-    }
 }

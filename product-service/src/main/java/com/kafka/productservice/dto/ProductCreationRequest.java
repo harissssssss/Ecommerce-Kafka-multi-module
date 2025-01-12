@@ -1,4 +1,4 @@
-package com.appsdeveloperblog.products.dto;
+package com.kafka.productservice.dto;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;

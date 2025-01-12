@@ -1,6 +1,6 @@
-package com.appsdeveloperblog.products.service;
+package com.kafka.productservice.service;
 
-import com.appsdeveloperblog.core.dto.Product;
+import com.kafka.core.dto.Product;
 
 import java.util.List;
 import java.util.UUID;

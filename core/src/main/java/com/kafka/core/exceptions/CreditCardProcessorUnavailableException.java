@@ -1,4 +1,4 @@
-package com.appsdeveloperblog.core.exceptions;
+package com.kafka.core.exceptions;
 
 public class CreditCardProcessorUnavailableException extends RuntimeException {
 

@@ -1,4 +1,4 @@
-package com.appsdeveloperblog.payments.service;
+package com.kafka.paymentservice.service;
 
 import java.math.BigDecimal;
 import java.math.BigInteger;

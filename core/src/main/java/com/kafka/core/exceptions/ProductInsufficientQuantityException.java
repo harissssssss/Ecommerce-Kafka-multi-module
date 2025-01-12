@@ -1,7 +1,9 @@
-package com.appsdeveloperblog.core.exceptions;
+package com.kafka.core.exceptions;
 
 import java.util.UUID;
+import lombok.Getter;
 
+@Getter
 public class ProductInsufficientQuantityException extends RuntimeException {
     private final UUID productId;
     private final UUID orderId;
@@ -10,13 +12,5 @@ public class ProductInsufficientQuantityException extends RuntimeException {
         super("Product " + productId + " has insufficient quantity in the stock for order " + orderId);
         this.productId = productId;
         this.orderId = orderId;
-    }
-
-    public UUID getProductId() {
-        return productId;
-    }
-
-    public UUID getOrderId() {
-        return orderId;
     }
 }

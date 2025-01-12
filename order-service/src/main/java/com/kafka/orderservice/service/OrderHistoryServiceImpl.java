@@ -1,9 +1,10 @@
-package com.appsdeveloperblog.orders.service;
+package com.kafka.orderservice.service;
 
-import com.appsdeveloperblog.core.types.OrderStatus;
-import com.appsdeveloperblog.orders.dao.jpa.entity.OrderHistoryEntity;
-import com.appsdeveloperblog.orders.dao.jpa.repository.OrderHistoryRepository;
-import com.appsdeveloperblog.orders.dto.OrderHistory;
+
+import com.kafka.core.types.OrderStatus;
+import com.kafka.orderservice.dto.OrderHistory;
+import com.kafka.orderservice.jpa.entity.OrderHistoryEntity;
+import com.kafka.orderservice.jpa.repository.OrderHistoryRepository;
 import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;
 

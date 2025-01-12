@@ -1,4 +1,4 @@
-package com.kafka.core.events;
+package com.kafka.core.dto.commands;
 
 import lombok.*;
 

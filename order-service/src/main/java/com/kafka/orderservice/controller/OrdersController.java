@@ -1,11 +1,11 @@
-package com.appsdeveloperblog.orders.web.controller;
+package com.kafka.orderservice.controller;
 
-import com.appsdeveloperblog.core.dto.Order;
-import com.appsdeveloperblog.orders.dto.CreateOrderRequest;
-import com.appsdeveloperblog.orders.dto.CreateOrderResponse;
-import com.appsdeveloperblog.orders.dto.OrderHistoryResponse;
-import com.appsdeveloperblog.orders.service.OrderHistoryService;
-import com.appsdeveloperblog.orders.service.OrderService;
+import com.kafka.core.dto.Order;
+import com.kafka.orderservice.dto.CreateOrderRequest;
+import com.kafka.orderservice.dto.CreateOrderResponse;
+import com.kafka.orderservice.dto.OrderHistoryResponse;
+import com.kafka.orderservice.service.OrderHistoryService;
+import com.kafka.orderservice.service.OrderService;
 import jakarta.validation.Valid;
 import org.springframework.beans.BeanUtils;
 import org.springframework.http.HttpStatus;

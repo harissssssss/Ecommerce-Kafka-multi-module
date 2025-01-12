@@ -1,4 +1,4 @@
-package com.appsdeveloperblog.products.dto;
+package com.kafka.productservice.dto;
 
 import java.math.BigDecimal;
 import java.util.UUID;

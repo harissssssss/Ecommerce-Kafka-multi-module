@@ -1,6 +1,6 @@
-package com.appsdeveloperblog.orders.dao.jpa.repository;
+package com.kafka.orderservice.jpa.repository;
 
-import com.appsdeveloperblog.orders.dao.jpa.entity.OrderHistoryEntity;
+import com.kafka.orderservice.jpa.entity.OrderHistoryEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

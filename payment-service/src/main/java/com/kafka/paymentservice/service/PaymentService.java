@@ -1,6 +1,6 @@
-package com.appsdeveloperblog.payments.service;
+package com.kafka.paymentservice.service;
 
-import com.appsdeveloperblog.core.dto.Payment;
+import com.kafka.core.dto.Payment;
 
 import java.util.List;
 
